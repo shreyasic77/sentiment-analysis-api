@@ -22,9 +22,31 @@ This project implements a sentiment analysis API using FastAPI. The API accepts 
 python3 -m venv venv
 source venv/bin/activate
 
-3.**Install dependencies**:
-```bash
+#install dependencies
 pip install -r requirements.txt
+```
 
-Execution:
-The app could be accessed from http://localhost:8000/docs
+3. **Run**:
+```bash   
+uvicorn main:app --reload
+```
+
+4. **Accessing API Documentation**:
+Open your browser and go to http://localhost:8000/docs
+
+5. **Sending a POST Request**:
+- Use an HTTP client like curl, Postman, or any programming language's HTTP library to send a POST request to /sentiment with a JSON payload.
+- The API will return a JSON response containing the sentiment label and a confidence score.
+
+6. **API Endpoints**:
+
+- **`POST /sentiment`**: Analyzes the sentiment of the provided text.
+  - **Request Body**: JSON object with a `text` field.
+  - **Response**: JSON object with `sentiment` and `confidence` fields.
+
+7. **Error Handling**:
+
+The API includes input validation and error handling. Common errors include:
+
+- **400 Bad Request**: If the `text` field is missing or invalid.
+- **429 Too Many Requests**: If the user exceeds the rate limit.  
