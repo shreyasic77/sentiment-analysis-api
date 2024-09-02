@@ -54,4 +54,4 @@ The API includes input validation and error handling. Common errors include:
 - **400 Bad Request**: If the input data is invalid.
 - **500 Too Many Requests**: If there's any error during the process.
 
-![Alt text]([relative/path/to/image.png](https://github.com/shreyasic77/sentiment-analysis-api/blob/main/sentiment2.png))  
+![Banner Image](https://github.com/shreyasic77/sentiment-analysis-api/blob/main/sentiment2.png)
