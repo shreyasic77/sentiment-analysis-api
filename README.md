@@ -2,6 +2,9 @@
 
 This project implements a sentiment analysis API using FastAPI. The API accepts text input via POST requests and returns the sentiment (positive, negative, or neutral) along with a confidence score. It features input validation, error handling, and rate limiting to ensure robust performance.
 
+#Sentiment Analysis Project
+![Banner Image](https://github.com/shreyasic77/sentiment-analysis-api/blob/main/sentiment_analysis_banner.jpeg)
+
 ## Features
 
 - **Sentiment Analysis**: Analyzes the sentiment of a given text using a pre-trained model (e.g., from Hugging Face Transformers).
@@ -48,5 +51,7 @@ Open your browser and go to http://localhost:8000/docs
 
 The API includes input validation and error handling. Common errors include:
 
-- **400 Bad Request**: If the `text` field is missing or invalid.
-- **429 Too Many Requests**: If the user exceeds the rate limit.  
+- **400 Bad Request**: If the input data is invalid.
+- **500 Too Many Requests**: If there's any error during the process.
+
+![Alt text]([relative/path/to/image.png](https://github.com/shreyasic77/sentiment-analysis-api/blob/main/sentiment2.png))  
